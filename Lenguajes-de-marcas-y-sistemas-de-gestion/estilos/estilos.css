@@ -1,0 +1,163 @@
+/* Tipografía y base */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background: #ffffff;
+  color: #222;
+}
+
+/* Contenedor centrado y ancho máximo */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Cabecera */
+.site-topbar {
+  border-bottom: 2px solid #e0e0e0;
+  padding: 0.5rem 0;
+}
+
+/* ===== Menú (XHTML: <ul class="nav">) ===== */
+.site-topbar .nav {
+  list-style: none;           /* sin viñetas */
+  margin: 0;
+  padding: 0;
+  display: flex;              /* elementos en línea */
+  justify-content: center;    /* centrado */
+  align-items: center;
+  gap: 1rem;                  /* espacio entre enlaces */
+  flex-wrap: nowrap;          /* evita saltos de línea */
+  white-space: nowrap;        /* mantiene todo en una línea */
+}
+
+.site-topbar .nav li {
+  margin: 0;
+  padding: 0;
+}
+
+.site-topbar .nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  transition: color 0.3s ease;
+}
+
+/* Efecto hover */
+.site-topbar .nav a:hover {
+  color: #0077cc;
+}
+
+/* Quita el recuadro gris al hacer clic */
+.site-topbar .nav a:active,
+.site-topbar .nav a:focus {
+  background: none;
+  outline: none;
+  color: #0077cc;
+}
+
+
+/* Imagen principal */
+.imagen-portada {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+.imagen-centro {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+/* Texto de presentación */
+.presentacion {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.presentacion h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+.presentacion p {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Formulario */
+.form {
+  display: grid;
+  gap: 1rem;
+}
+.field {
+  display: grid;
+  gap: 0.4rem;
+}
+input, textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+}
+button.btn {
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+button.btn:hover {
+  background: #005fa3;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 2px solid #e0e0e0;
+  margin-top: 2rem;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* --- Texto de destinos --- */
+.texto-destino {
+  max-width: 500px;       /* límite de ancho */
+  margin: 0.75rem auto;   /* centrado horizontal */
+  line-height: 1.65;
+  text-align: justify;
+}
+
+/* Listas de oficinas de turismo */
+.oficinas-turismo {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 500px;      /* límite de ancho */
+  margin-left: auto;     /* centrado horizontal */
+  margin-right: auto;    /* centrado horizontal */
+  text-align: left;      /* texto alineado como los párrafos */
+}
+.oficinas-turismo h2,
+.oficinas-turismo h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+.oficinas-turismo ol,
+.oficinas-turismo ul {
+  margin-left: 1.5rem;   /* pequeña sangría para las listas */
+  line-height: 1.6;
+}
+.oficinas-turismo li { margin-bottom: 0.3rem; }
+.oficinas-turismo a {
+  color: #0077cc;
+  text-decoration: none;
+}
+.oficinas-turismo a:hover { text-decoration: underline; }
